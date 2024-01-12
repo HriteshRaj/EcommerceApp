@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                         val searchtext=newtext!!.lowercase(Locale.getDefault())
                         if(searchtext.isNotEmpty()){
                             productList.forEach {
-                                if(it.title.toLowerCase(Locale.getDefault()).contains(newtext)) {
+                                if(it.title.toLowerCase(Locale.getDefault()).contains(searchtext)) {
                                     searchlist.add(it)
 
                                 }
